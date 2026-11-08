@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HotelManager</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>HOTELMANAGER</h1>
+      <button type="button" class="user" aria-label="User menu" id="user">User</button>
+    </header>
+    <div class="layout">
+      <nav class="rail" aria-label="Sections" id="rail">
+        <button type="button" data-t="H" class="on" title="Housekeeping">H</button>
+        <button type="button" data-t="F" title="Front desk">F</button>
+        <button type="button" data-t="M" title="Maintenance">M</button>
+        <button type="button" data-t="I" title="Inventory">I</button>
+      </nav>
+      <main class="main" id="main"></main>
+    </div>
+  </div>
+
+  <div class="scrim" id="scrim">
+    <div class="win" id="win" role="dialog" aria-modal="true" aria-labelledby="win-title"></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
